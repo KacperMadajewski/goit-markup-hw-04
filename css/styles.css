@@ -62,6 +62,20 @@ body {
   justify-content: space-between;
 }
 
+.envelope {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.smartphone {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .header-items-2 .link-2:hover,
 .header-items-2 .link-2:focus {
   color: var(--hoover-color);
