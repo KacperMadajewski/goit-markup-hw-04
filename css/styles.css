@@ -50,6 +50,12 @@ body {
   margin-right: 345px;
 }
 
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #212121;
+}
+
 .header-items .link:hover,
 .header-items .link:focus {
   color: var(--hoover-color);
@@ -60,6 +66,19 @@ body {
   list-style: none;
   gap: 30px;
   justify-content: space-between;
+}
+
+.link-2 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--links-text-color);
+}
+
+.header-items-2 .link-2:hover,
+.header-items-2 .link-2:focus {
+  color: var(--hoover-color);
 }
 
 .envelope {
@@ -76,11 +95,6 @@ body {
   margin-right: 10px;
 }
 
-.header-items-2 .link-2:hover,
-.header-items-2 .link-2:focus {
-  color: var(--hoover-color);
-}
-
 .navy-links {
   display: flex;
   list-style: none;
@@ -88,9 +102,22 @@ body {
   gap: 46px;
 }
 
+.navy-links .link:hover,
+.navy-links .link:focus {
+  color: var(--hoover-color);
+}
+
 .contact-links {
   display: flex;
   gap: 50px;
+}
+
+.contact-links .link {
+  color: var(--links-text-color);
+}
+.contact-links .link:hover,
+.contact-links .link:focus {
+  color: var(--hoover-color);
 }
 
 .contact-links-2 {
@@ -112,21 +139,10 @@ body {
 .wrapper {
   display: flex;
 }
-.link {
-  text-decoration: none;
-  cursor: pointer;
-  color: #212121;
-}
 
 .link-1 {
   text-decoration: none;
   cursor: pointer;
-}
-
-.link-2 {
-  text-decoration: none;
-  cursor: pointer;
-  color: var(--links-text-color);
 }
 
 .studio-color {
@@ -135,18 +151,6 @@ body {
 
 .studio-color-2 {
   color: #ffffff;
-}
-
-.navy-links .link:hover,
-.navy-links .link:focus {
-  color: var(--hoover-color);
-}
-.contact-links .link {
-  color: var(--links-text-color);
-}
-.contact-links .link:hover,
-.contact-links .link:focus {
-  color: var(--hoover-color);
 }
 
 .btn {
@@ -297,10 +301,6 @@ body {
   cursor: pointer;
 }
 
-.client-box:hover {
-  border: 1px solid #2196f3;
-}
-
 .client-logo {
   display: flex;
   justify-content: space-between;
@@ -310,7 +310,11 @@ body {
   margin: 17.71px 32px 14.25px 32px;
 }
 
-.client-logo:hover {
+.client-box:hover {
+  border: 1px solid var(--hoover-color);
+}
+
+.client-box:hover .client-logo {
   fill: var(--hoover-color);
 }
 
@@ -344,7 +348,8 @@ body {
   list-style: none;
   justify-content: center;
   gap: 8px;
-  padding-bottom: 50px;
+  padding-bottom: 34px;
+  padding-top: 94px;
 }
 
 .open-menu {
@@ -397,6 +402,7 @@ body {
   background: #f5f4fa;
   border-radius: 4px;
   border: none;
+  padding: 6px 22px;
 }
 .navy-btn:hover {
   background: #2196f3;
